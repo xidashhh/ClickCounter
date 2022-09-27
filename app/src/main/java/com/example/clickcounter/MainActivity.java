@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         init();
+
         buttonHozzaad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,10 +35,11 @@ public class MainActivity extends AppCompatActivity {
                     szamKimenet.setTextColor(Color.parseColor("#ff0000"));
                 } else {
                     szamKimenet.setText(String.valueOf(szam));
-                    szamKimenet.setTextColor(Color.parseColor("#0317fc"));
+                    szamKimenet.setTextColor(Color.rgb(3, 23, 252));
                 }
             }
         });
+
         buttonElvon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -55,12 +57,15 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        szamKimenet.setOnClickListener(new View.OnClickListener() {
+
+
+        szamKimenet.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View view) {
+            public boolean onLongClick(View v) {
                 szam = 0;
                 szamKimenet.setText(String.valueOf(szam));
                 szamKimenet.setTextColor(Color.parseColor("#0317fc"));
+                return false;
             }
         });
 

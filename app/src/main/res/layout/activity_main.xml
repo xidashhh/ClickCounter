@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000000"
     tools:context=".MainActivity">
+
 
     <RelativeLayout
         android:layout_width="409dp"
@@ -21,6 +23,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="0"
+            android:textColor="@color/kek"
             android:textSize="30sp" />
 
         <Button

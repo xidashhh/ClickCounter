@@ -21,7 +21,6 @@
             android:layout_height="wrap_content"
             android:text="teszt"
             android:textAlignment="center"
-            android:
             android:textSize="30dp" />
 
 
